@@ -3,17 +3,10 @@
 #include <stdbool.h>
 #include <math.h>
 int main() {
-	int a,b;
-	printf("entrer a:");
-	scanf("%d",&a);
-	printf("entrer b:");
-	scanf("%d",&b);
-	if(a==b) {
-		printf("a et b sont identiques,le triple de la somme est : %d",(a+b)*3);
-	}
-	else {
-		printf("la sommes de aet b est : %d",a+b);
-	}
-	
+	float a,b;
+	printf("veuiller entrer la Distance en km : ");
+	scanf("%f",&a);
+	b=a*1093.61;
+	printf("la Distance en yards est : %.2f",b);
 	return 0;
 }
