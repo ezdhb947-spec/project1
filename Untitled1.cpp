@@ -1,32 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
+#include <math.h>
 int main() {
-	
-	char nom[20];
-	char prenom[20];
-	int age;
-	char sexe[2];
-	char email[50];
-	
-  printf("veuillez entrer votre nom : ");
-  scanf("%s",&nom);
-  
-  printf("veuillez entre votre prenom : ");
-  scanf("%s",&prenom);
-  
-  printf("veuillez entrer votre age : ");
-  scanf("%d",&age);
-  
-  printf("veuillez choisir votre sexe f/h : ");
-  scanf("%s",&sexe);
-  
-  printf("veuillez entrer votre email: ");
-  scanf("%s",&email);
-  
-  printf("nom : %s \n",nom);
-  printf("prenom : %s \n",prenom);
-  printf("age : %d \n",age);
-  printf("sexe : %s \n",sexe);
-  printf("email : %s \n",email);
- return 0;
+	int a,b,c,x;
+	int delta;
+	printf("entrez la valeur de a : ");
+	scanf("%d",&a);
+	printf("entrez la valeur de b : ");
+	scanf("%d",&b);
+	printf("entrez la valeur de c : ");
+	scanf("%d",&c);
+	delta=pow(b,2)+4*a*c;
+	if (delta<0){
+		printf("2 sollutions possibles");
+	}
+	else if (delta==0){
+		printf("une seule sollution possible ");
+	}
+	else {
+		printf("2 sollutions possibles ");
+	}
+	return 0;
 }

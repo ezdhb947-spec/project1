@@ -1,12 +1,25 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
 #include <math.h>
 int main() {
-	float a,b;
-	printf("veuiller entrer la temperature en celsius : ");
-	scanf("%f",&a);
-	b=a+273.15;
-	printf("la temperature en kelvin : %.2f",b);
-	return 0;
-}
+	int n;
+	printf("veuillez entrer lenombre de la lettre : ");
+	scanf("%d",&n);
+	switch (n) {
+		case 1 :printf("la lettre est une voyelle .");
+		break;
+		case 5 :printf("la lettre est une voyelle .");
+		break;
+		case 9 :printf("la lettre est une voyelle .");
+		break;
+		case 15 :printf("la lettre est une voyelle .");
+		break;
+		case 21 :printf("la lettre est une voyelle .");
+		break;
+		case 25 :printf("la lettre est une voyelle .");
+		break;
+		default : printf("la lettre est une consonne .");
+		
+	}
+	
+	}
